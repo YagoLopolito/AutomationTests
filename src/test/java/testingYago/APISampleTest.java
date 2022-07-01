@@ -37,7 +37,7 @@ public class APISampleTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "qpsdemo")
-    public void testCreateUser() throws Exception {
+    public void testCreateUser() {
         PostAlbums api = new PostAlbums();
         AtomicInteger counter = new AtomicInteger(0);
 
@@ -89,6 +89,7 @@ public class APISampleTest implements IAbstractTest {
         deleteComments.callAPIExpectSuccess();
         deleteComments.validateResponse();
     }
+
     @Test()
     @MethodOwner(owner = "qpsdemo")
     public void testCreateComment() throws Exception {

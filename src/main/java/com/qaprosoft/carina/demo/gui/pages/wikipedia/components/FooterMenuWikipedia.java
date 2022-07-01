@@ -18,7 +18,8 @@ public class FooterMenuWikipedia extends AbstractPage {
     public FooterMenuWikipedia(WebDriver driver) {
         super(driver);
     }
-    public void UIComponents(){
+
+    public void UIComponents() {
         politicsButton.click();
         driver.navigate().back();
         moreInfoButton.click();

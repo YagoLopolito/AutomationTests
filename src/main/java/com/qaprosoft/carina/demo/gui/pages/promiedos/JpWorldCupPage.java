@@ -6,23 +6,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class JpWorldCupPage extends AbstractPage {
-    @FindBy(xpath = "//*[@id=\"for_60_6\"]/a/i")
+    @FindBy(xpath = "//td[@id='for_60_6']//i[@class='material-icons md-18'][normalize-space()='add_box']")
     private ExtendedWebElement plusButton;
-    @FindBy(xpath = "//*[@id=\"botoneraliga\"]/a[2]/div")
+    @FindBy(xpath = "//div[@idb='historialtorneos']")
     private ExtendedWebElement championsButton;
-    @FindBy(xpath = "//*[@id=\"tabranking\"]/tbody/tr[9]/td[5]/a/i")
+    @FindBy(xpath = "//tbody/tr[4]/td[5]/a[1]/i[1]")
     private ExtendedWebElement miniPlusButton;
 
     public JpWorldCupPage(WebDriver driver) {
         super(driver);
     }
-    public void PlusButtonClick(){
+
+    public void PlusButtonClick() {
         plusButton.click();
     }
-    public void ChampíonsButtonClick(){
+
+    public void ChampíonsButtonClick() {
         championsButton.click();
     }
-    public void MiniPlusButtonClick(){
+
+    public void MiniPlusButtonClick() {
         miniPlusButton.click();
     }
 

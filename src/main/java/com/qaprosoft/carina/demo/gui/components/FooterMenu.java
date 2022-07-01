@@ -15,12 +15,11 @@
  */
 package com.qaprosoft.carina.demo.gui.components;
 
+import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.core.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
-import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractUIObject;
 
 public class FooterMenu extends AbstractUIObject {
     @FindBy(linkText = "Home")
@@ -28,7 +27,7 @@ public class FooterMenu extends AbstractUIObject {
 
     @FindBy(xpath = "//div[@class='footer-inner']//a[contains(text(),'Compare')]")
     private ExtendedWebElement compareLink;
-    
+
     @FindBy(linkText = "News")
     private ExtendedWebElement newsLink;
 

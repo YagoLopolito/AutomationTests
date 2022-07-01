@@ -23,7 +23,8 @@ public class ContactPage extends AbstractPage {
     public ContactPage(WebDriver driver) {
         super(driver);
     }
-    public void contactTest(String name1, String email1, String comment1){
+
+    public void contactTest(String name1, String email1, String comment1) {
         name.click();
         name.type(name1);
         email.click();

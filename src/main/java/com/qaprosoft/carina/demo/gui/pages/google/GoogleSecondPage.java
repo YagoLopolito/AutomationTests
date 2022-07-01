@@ -13,7 +13,8 @@ public class GoogleSecondPage extends AbstractPage {
     public GoogleSecondPage(WebDriver driver) {
         super(driver);
     }
-    public void pageOne(){
+
+    public void pageOne() {
         pageOne.click();
     }
 }

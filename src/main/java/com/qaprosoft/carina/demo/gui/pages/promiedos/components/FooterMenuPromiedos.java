@@ -21,7 +21,7 @@ public class FooterMenuPromiedos extends AbstractPage {
         super(driver);
     }
 
-    public void footerMenuClick(){
+    public void footerMenuClick() {
         contactButton.click();
         driver.navigate().back();
         donationButton.click();
@@ -33,7 +33,8 @@ public class FooterMenuPromiedos extends AbstractPage {
         instagramButton.click();
         driver.navigate().back();
     }
-    public void contactClick(){
+
+    public void contactClick() {
         contactButton.click();
     }
 }

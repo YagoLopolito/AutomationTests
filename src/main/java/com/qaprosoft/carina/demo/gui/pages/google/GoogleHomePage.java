@@ -22,7 +22,8 @@ public class GoogleHomePage extends AbstractPage {
     public void loadPage() {
         getDriver().get("https://www.google.com");
     }
-    public void searchWithDataProviders(String phrase){
+
+    public void searchWithDataProviders(String phrase) {
         searchBar.click();
         searchBar.type(phrase);
         searchButton.click();

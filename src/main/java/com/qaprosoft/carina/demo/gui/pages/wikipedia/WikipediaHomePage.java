@@ -9,9 +9,11 @@ public class WikipediaHomePage extends AbstractPage {
 
     @FindBy(xpath = "//input[@id='searchInput']")
     private ExtendedWebElement searchBar;
+
     public WikipediaHomePage(WebDriver driver) {
         super(driver);
     }
+
     public void LoadPage() {
         getDriver().get("https://es.wikipedia.org/wiki/Wikipedia:Portada");
     }

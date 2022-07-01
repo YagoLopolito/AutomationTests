@@ -7,34 +7,39 @@ import org.openqa.selenium.support.FindBy;
 
 public class Qtar2022 extends AbstractPage {
 
-    @FindBy(xpath = "//*[@id=\"simulband\"]/div[3]/img[1]")
+    @FindBy(xpath = "//div[@class='gruposim'][normalize-space()='C:']//img[1]")
     private ExtendedWebElement argentinianFlagButton;
-    @FindBy(xpath = "//*[@id=\"simulband\"]/div[3]/img[3]")
+    @FindBy(xpath = "//div[@class='gruposim'][normalize-space()='C:']//img[3]")
     private ExtendedWebElement mexicanFlagButton;
-    @FindBy(xpath = "//*[@id=\"simulband\"]/div[4]/img[1]")
+    @FindBy(xpath = "//div[@class='gruposim'][normalize-space()='D:']//img[1]")
     private ExtendedWebElement franceFlagButton;
-    @FindBy(xpath = "//*[@id=\"simulband\"]/div[1]/img[4]")
+    @FindBy(xpath = "//div[@class='gruposim'][normalize-space()='D:']//img[3]")
     private ExtendedWebElement holandaFlagButton;
-    @FindBy(xpath = "//*[@id=\"botoneraliga\"]/a[3]/div")
+    @FindBy(xpath = "//div[@idb='historialtorneos']")
     private ExtendedWebElement championsButton;
 
 
     public Qtar2022(WebDriver driver) {
         super(driver);
     }
-    public void ArgetinianClick(){
-    argentinianFlagButton.click();
+
+    public void ArgetinianClick() {
+        argentinianFlagButton.click();
     }
-    public void MexicoClick(){
+
+    public void MexicoClick() {
         mexicanFlagButton.click();
     }
-    public void FranceClick(){
+
+    public void FranceClick() {
         franceFlagButton.click();
     }
-    public void HolandaClick(){
+
+    public void HolandaClick() {
         holandaFlagButton.click();
     }
-    public void ChampionsClick(){
+
+    public void ChampionsClick() {
         championsButton.click();
     }
 

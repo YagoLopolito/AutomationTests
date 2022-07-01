@@ -7,13 +7,14 @@ public class GoogleDataProvider {
     }
 
     @DataProvider(name = "items")
-    public Object[][] searchData(){
-        Object[][]data ={{"Liga Argentina"},{"Messi"},{"Palermo"},{"Riquelme"}};
+    public Object[][] searchData() {
+        Object[][] data = {{"Liga Argentina"}, {"Messi"}, {"Palermo"}, {"Riquelme"}};
         return data;
     }
+
     @DataProvider(name = "search")
-    public Object[][] searchPanda(){
-        Object[][]data ={{"Panda Gigante"}};
+    public Object[][] searchPanda() {
+        Object[][] data = {{"Panda Gigante"}};
         return data;
     }
 }

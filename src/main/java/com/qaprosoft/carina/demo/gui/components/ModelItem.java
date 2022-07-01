@@ -15,12 +15,11 @@
  */
 package com.qaprosoft.carina.demo.gui.components;
 
+import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.core.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
-import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractUIObject;
 
 public class ModelItem extends AbstractUIObject {
     @FindBy(xpath = ".//strong/span")
@@ -37,4 +36,4 @@ public class ModelItem extends AbstractUIObject {
         return modelLabel.getText();
     }
 
-    }
+}

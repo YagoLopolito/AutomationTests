@@ -7,8 +7,8 @@ public class PromiedosDataProvider {
     }
 
     @DataProvider(name = "data")
-    public Object[][] placingData(){
-        Object[][]data ={{"Yago Lopolito","Yagolopolito@hotmail.com","Daledale dale daledale dale dale vooca"}};
+    public Object[][] placingData() {
+        Object[][] data = {{"Yago Lopolito", "Yagolopolito@hotmail.com", "Daledale dale daledale dale dale vooca"}};
         return data;
     }
 }

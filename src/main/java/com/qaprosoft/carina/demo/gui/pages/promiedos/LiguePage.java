@@ -6,11 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class LiguePage extends AbstractPage {
-    @FindBy(xpath = "//*[@id=\"flechaad\"]")
+    @FindBy(xpath = "//div[@id='flechaad']//img")
     private ExtendedWebElement nextGame;
-    @FindBy(xpath = "//*[@id=\"flechaatr\"]")
+    @FindBy(xpath = "//div[@id='flechaatr']//img")
     private ExtendedWebElement lastGame;
-    @FindBy(xpath = "//*[@id=\"accordian\"]/ul/li[3]/ul/li[7]/a")
+    @FindBy(xpath = "//div[@idb='historialtorneos']")
     private ExtendedWebElement tittlesButton;
 
 
@@ -18,14 +18,16 @@ public class LiguePage extends AbstractPage {
         super(driver);
     }
 
-    public void NextGameClick(){
+    public void NextGameClick() {
         nextGame.click();
     }
-    public void LastGameClick(){
-       lastGame.click();
+
+    public void LastGameClick() {
+        lastGame.click();
     }
-    public void TittlesButtonClick(){
-       tittlesButton.click();
+
+    public void TittlesButtonClick() {
+        tittlesButton.click();
     }
 
 
