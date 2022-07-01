@@ -1,4 +1,4 @@
-Feature: GSM Arena News testing
+Feature: GSM Arena News testingYago
   In order to use Cucumber in my project, I want to check how to test GSM Arena News page
 
   @demo

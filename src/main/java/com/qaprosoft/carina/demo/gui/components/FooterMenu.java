@@ -36,18 +36,4 @@ public class FooterMenu extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public HomePage openHomePage() {
-        homeLink.click();
-        return new HomePage(driver);
-    }
-
-    public CompareModelsPage openComparePage() {
-        compareLink.click();
-        return new CompareModelsPage(driver);
-    }
-    
-    public NewsPage openNewsPage() {
-        newsLink.click();
-        return new NewsPage(driver);
-    }
 }

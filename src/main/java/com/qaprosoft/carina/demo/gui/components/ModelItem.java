@@ -37,8 +37,4 @@ public class ModelItem extends AbstractUIObject {
         return modelLabel.getText();
     }
 
-    public ModelInfoPage openModelPage() {
-        modelLink.click();
-        return new ModelInfoPage(driver);
     }
-}

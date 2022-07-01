@@ -17,6 +17,13 @@ public class HomePagePromiedos extends AbstractPage {
     private ExtendedWebElement bannerButton;
     @FindBy(xpath = "//*[@id=\"fixturein\"]/table/tbody/tr[2]")
     private ExtendedWebElement ligueButton;
+    @FindBy(xpath = "//*[@id=\"accordian\"]/ul/li[2]/ul/li[1]/a")
+    private ExtendedWebElement qtarButton;
+    @FindBy(id = "part3")
+    private ExtendedWebElement instagramButton;
+    @FindBy(xpath = "//*[@id=\"accordian\"]/ul/li[4]/ul/li[2]/a")
+    private ExtendedWebElement jpWorldCupButton;
+
 
     public HomePagePromiedos(WebDriver driver) {
         super(driver);
@@ -36,5 +43,15 @@ public class HomePagePromiedos extends AbstractPage {
     public void LigueButtonClick(){
         ligueButton.click();
     }
+    public void QtarButtonClick(){
+        qtarButton.click();
+    }
+    public void InstagramCick(){
+        instagramButton.click();
+    }
+    public void JpWorldCupButtonClick(){
+        jpWorldCupButton.click();
+    }
+
 
 }
